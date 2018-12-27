@@ -13,10 +13,7 @@ class Concentration{
     
     var indexOfOneAndOnlyFaceAndCard: Int?
     
-    var score = 0
-    var flipCount = 0
-    
-    var chooseIdentifiers = [Int]();
+   
     
     /*
      1.if index card is matched, nothing to do
@@ -26,8 +23,6 @@ class Concentration{
     
     func chooseCard(at index : Int){
         
-        flipCount += 1
-        
         if !cards[index].isMatched {
             
           
@@ -36,20 +31,6 @@ class Concentration{
                     cards[index].isMatched = true
                     cards[matchIndex].isMatched = true
                     
-                    score += 2;
-                }else{
-                    if chooseIdentifiers.contains(cards[index].identifier) {
-                        score -= 1
-                    }
-                    if chooseIdentifiers.contains(cards[matchIndex].identifier){
-                        score -= 1
-                    }
-                    if !chooseIdentifiers.contains(cards[index].identifier){
-                        chooseIdentifiers.append(cards[index].identifier)
-                    }
-                    if !chooseIdentifiers.contains(cards[matchIndex].identifier){
-                        chooseIdentifiers.append(cards[matchIndex].identifier)
-                    }
                 }
                 cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceAndCard = nil
@@ -60,24 +41,16 @@ class Concentration{
                 indexOfOneAndOnlyFaceAndCard = index
                 cards[index].isFaceUp = true
             }
-            
-            print("current score is \(score)")
         }
     }
     
  
     
     init(numberOfPairsOfCards: Int){
-        cards = []
-        indexOfOneAndOnlyFaceAndCard = nil
-        score = 0
-        flipCount = 0
         for _ in 1...numberOfPairsOfCards {
             let card =  Card()
             
             cards += [card,card]
         }
-        
-        cards = cards.shuffled()
     }
 }

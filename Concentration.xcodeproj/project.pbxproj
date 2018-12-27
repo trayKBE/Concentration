@@ -12,7 +12,6 @@
 		4B0109F421C108A900E3CF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0109F321C108A900E3CF74 /* Assets.xcassets */; };
 		4B0109FF21CA76B600E3CF74 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0109FE21CA76B600E3CF74 /* Card.swift */; };
 		4B010A0121CA7B1200E3CF74 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B010A0021CA7B1200E3CF74 /* Concentration.swift */; };
-		4B010A2E21D1D0A200E3CF74 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B010A2D21D1D0A200E3CF74 /* Theme.swift */; };
 		4B010A6621D3C24000E3CF74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B010A6421D3C24000E3CF74 /* Main.storyboard */; };
 		4B66E83621D3C7A9007612D3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B66E83521D3C7A9007612D3 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
@@ -25,7 +24,6 @@
 		4B0109F821C108A900E3CF74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B0109FE21CA76B600E3CF74 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		4B010A0021CA7B1200E3CF74 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
-		4B010A2D21D1D0A200E3CF74 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		4B010A6421D3C24000E3CF74 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4B66E83521D3C7A9007612D3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +60,6 @@
 			children = (
 				4B0109EC21C108A800E3CF74 /* AppDelegate.swift */,
 				4B0109EE21C108A800E3CF74 /* ViewController.swift */,
-				4B010A2D21D1D0A200E3CF74 /* Theme.swift */,
 				4B0109FE21CA76B600E3CF74 /* Card.swift */,
 				4B010A0021CA7B1200E3CF74 /* Concentration.swift */,
 				4B0109F321C108A900E3CF74 /* Assets.xcassets */,
@@ -146,7 +143,6 @@
 			files = (
 				4B0109EF21C108A800E3CF74 /* ViewController.swift in Sources */,
 				4B010A0121CA7B1200E3CF74 /* Concentration.swift in Sources */,
-				4B010A2E21D1D0A200E3CF74 /* Theme.swift in Sources */,
 				4B0109FF21CA76B600E3CF74 /* Card.swift in Sources */,
 				4B0109ED21C108A800E3CF74 /* AppDelegate.swift in Sources */,
 			);
